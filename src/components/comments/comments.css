@@ -1,0 +1,84 @@
+.comments {
+  padding: 20px;
+}
+
+.commentForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.commentProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.commentInput {
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: #f0f2f5;
+}
+
+.commentInput:focus {
+  outline: none;
+}
+
+.commentSubmitButton {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #1775ee;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.commentSubmitButton:hover {
+  background-color: #1464d4;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.commentContent {
+  background-color: #f0f2f5;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.commentText {
+  margin-bottom: 5px;
+}
+
+.commentUsername {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.commentTimestamp {
+  font-size: 12px;
+  color: #65676b;
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    padding: 10px;
+  }
+  
+  .commentContent {
+    max-width: 100%;
+  }
+  
+  .commentProfileImg {
+    width: 28px;
+    height: 28px;
+  }
+}

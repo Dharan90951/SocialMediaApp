@@ -1,0 +1,14 @@
+.posts {
+  flex: 6;
+  padding: 20px;
+}
+
+.postContainer {
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .posts {
+    padding: 10px;
+  }
+}

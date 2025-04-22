@@ -1,0 +1,76 @@
+.notifications {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.68);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.notificationsWrapper {
+  padding: 10px;
+}
+
+.notificationsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notificationsHeader h3 {
+  margin: 0;
+  color: #333;
+}
+
+.closeIcon {
+  cursor: pointer;
+  color: #666;
+}
+
+.closeIcon:hover {
+  color: #333;
+}
+
+.notificationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.notificationItem {
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.notificationItem:hover {
+  background-color: #f5f5f5;
+}
+
+.notificationItem.unread {
+  background-color: #e8f5fe;
+}
+
+.notificationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.notificationContent p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.notificationTime {
+  font-size: 12px;
+  color: #666;
+}
